@@ -1,0 +1,44 @@
+meta {
+  name: Update Cyberpunk
+  type: http
+  seq: 8
+}
+
+put {
+  url: http://localhost:8080/series/7
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id": 7,
+    "nom": "Cyberpunk: Edgerunners",
+    "lienImage": "",
+    "vo": "japonais",
+    "premise": "David Martinez vit avec sa mère dans un mégabuilding de Night City. À l'académie d'Arasaka, il se confronte à des problèmes financiers. Après la mort de sa mère dans un accident, il doit prendre des décisions difficiles pour survivre dans la ville.",
+    "genres": [
+      {
+        "id": 1,
+        "nom": "Action"
+      },
+      {
+        "id": 2,
+        "nom": "Animation"
+      },
+      {
+        "id": 3,
+        "nom": "Science Fiction"
+      }
+    ],
+    "saisons": [
+      {
+        "id": 13,
+        "num": 1,
+        "nom": "Saison 1",
+        "annee": 2022,
+        "nombreEpisode": 10
+      }
+    ]
+  }
+}

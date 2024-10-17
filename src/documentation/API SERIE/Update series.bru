@@ -1,0 +1,36 @@
+meta {
+  name: Update series
+  type: http
+  seq: 7
+}
+
+put {
+  url: http://localhost:8080/series/6
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+  "id": 6,
+  "nom": "Foundation",
+  "lienImage": "",
+  "vo": "americain",
+  "premise": "L'empire galactique, dirigé par la dynastie génétique des clones de l'Empereur Cléon Ier, se voit prédire par la psychohistoire de Hari Seldon un effondrement suivi de 30 000 ans de ténèbres avant qu'un second empire galactique ne prenne la relève. ",
+  "genres": [
+  {
+  "id": 4,
+  "nom": "Science-Fiction"
+  }
+  ],
+  "saisons": [
+  {
+  "id": 11,
+  "num": 1,
+  "nom": "Saison 1",
+  "annee": 2021,
+  "nombreEpisode": 10
+  }
+  ]
+  }
+}
